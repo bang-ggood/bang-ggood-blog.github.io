@@ -29,7 +29,7 @@ const Profile = styled.div`
   border-radius: 999px;
   background-size: cover;
   background-position: center;
-  background-color: #f4f1d5;
+  background-color: #fff8dd;
   display: flex;
   justify-content: center;
   align-items: center;
