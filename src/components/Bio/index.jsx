@@ -1,23 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 
-import {
-  FaGithub,
-  FaKaggle,
-  FaFacebook,
-  FaTwitter,
-  FaLinkedin,
-  FaInstagram,
-} from "react-icons/fa"
+import { FaGithub, FaLink } from "react-icons/fa"
 
-import {
-  FaXTwitter,
-  FaRegEnvelope,
-  FaMedium,
-  FaBlogger,
-  FaRegFileLines,
-  FaLink,
-} from "react-icons/fa6"
+import { FaRegEnvelope } from "react-icons/fa6"
 
 import { siteUrl, description, author, links } from "../../../blog-config"
 
@@ -41,9 +27,12 @@ const Profile = styled.div`
   width: 128px;
   height: 128px;
   border-radius: 999px;
-  background-image: url(${profileImageRoot}/profile.png);
   background-size: cover;
   background-position: center;
+  background-color: #f4f1d5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 const Author = styled.div`
@@ -91,24 +80,13 @@ const Link = ({ link, children }) => {
 }
 
 const Bio = () => {
-  const {
-    github,
-    kaggle,
-    instagram,
-    facebook,
-    twitter,
-    x,
-    blogger,
-    medium,
-    linkedIn,
-    email,
-    resume,
-    link,
-  } = links
+  const { github, email, link } = links
 
   return (
     <BioWrapper id="bio">
-      <Profile />
+      <Profile>
+        <img src={`${profileImageRoot}/logo.png`} width="60%" height="60%" />
+      </Profile>
       <div>
         <Author>@{author}</Author>
         <Description>{description}</Description>
@@ -116,35 +94,8 @@ const Bio = () => {
           <Link link={github}>
             <FaGithub />
           </Link>
-          <Link link={kaggle}>
-            <FaKaggle />
-          </Link>
-          <Link link={instagram}>
-            <FaInstagram />
-          </Link>
-          <Link link={facebook}>
-            <FaFacebook />
-          </Link>
-          <Link link={twitter}>
-            <FaTwitter />
-          </Link>
-          <Link link={x}>
-            <FaXTwitter />
-          </Link>
-          <Link link={medium}>
-            <FaMedium />
-          </Link>
-          <Link link={blogger}>
-            <FaBlogger />
-          </Link>
-          <Link link={linkedIn}>
-            <FaLinkedin />
-          </Link>
           <Link link={email}>
             <FaRegEnvelope />
-          </Link>
-          <Link link={resume}>
-            <FaRegFileLines />
           </Link>
           <Link link={link}>
             <FaLink />
