@@ -1,12 +1,12 @@
 ---
 title: "CI/CD 파이프라인 구축기"
 description:
-date: 2024-05-04
-update: 2024-05-04
+date: 2024-09-09
+update: 2024-09-09
 tags:
   - backend
   - ci/cd
-series: ""
+series: "방끗 백엔드의 기록"
 ---
 
 > 이번 글에서는 저희 팀이 처음으로 겪었던 CI/CD 과정에서의 트러블슈팅 경험을 소개하고자 합니다!
