@@ -13,6 +13,8 @@ series: "방끗 백엔드의 기록"
 
 CI(Continuous Integration)는 팀이 일관된 코딩 스타일과 품질을 유지할 수 있도록 돕는 중요한 도구입니다.  저희 방끗도 일관적인 코드 스타일을 위해 eslint, prettier, stylelint 등을 활용하여 CI 환경을 구축했습니다. 오늘 저희 팀이 어떤 설정을을 어떻게 구축했는지 소개하겠습니다.  
 
+![alt text](image.png)
+
 <br>
 
 ## 1. 방끗이 사용한 CI 소개
