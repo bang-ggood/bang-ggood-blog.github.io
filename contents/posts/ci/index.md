@@ -4,9 +4,9 @@ description:
 date: 2024-07-23
 update: 2024-07-23
 tags:
-  - backend
-  - ci/cd
-series: "방끗 백엔드의 기록"
+  - frontend
+  - infra
+series: "방끗 프론트의 기록"
 ---
 
 ## CI 란? 
